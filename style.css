@@ -11,6 +11,16 @@
 
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
 
 
 body{
@@ -57,10 +67,9 @@ input{
     position: relative;
     background-color: gray;
     padding: 10px;
-    height: 200px;
-    width: 400px;
-    border-radius: 20px;
-    overflow: hidden;
+    height: 350px;
+    width: 550px;
+
 }
 
 #border1{
@@ -78,20 +87,27 @@ input{
 #border3{
     position:absolute;
     bottom:var(--var_margin);
-    left:var(--var_margin);
+    right:var(--var_margin);
 }
 
 #border4{
     position:absolute;
     bottom: var(--var_margin);
-    right: var(--var_margin);
+    left: var(--var_margin);
 }
 
 #borderGenerator{
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     border: 5px solid black;
 }
+
+#lockBorders{
+    position: absolute;
+    font-size: 15px;
+    bottom:10px;
+}
+
 
 #ADS1{
     background-color: rgb(44, 23, 138);

@@ -21,16 +21,23 @@
     <div id="main">
 
             <div id="containerSquare" class="square">
-                <input type="text" class="borderInput" id="border1">
-                <input type="text" class="borderInput" id="border2">
-                <input type="text" class="borderInput" id="border3">
-                <input type="text" class="borderInput" id="border4">
+                <input type="number" name="borderTopLeft" class="borderInput" id="border1">
+                <input type="number" name="borderTopRight" class="borderInput" id="border2">
+                <input type="number" name="borderBottomRight" class="borderInput" id="border3">
+                <input type="number" name="borderBottomLeft" class="borderInput" id="border4">
 
                 <div id="borderGenerator">
                     aqui fica o texto css
 
-                </div>
+                </div> 
 
+                <div id="lockBorders">
+                    <input type="radio" id="singleLocked" name="borderValueLock" checked>
+                    <label>Change Single</label>
+                    <input type="radio" id="allLocked" name="borderValueLock">
+                    <label>Change All</label>
+                </div>
+                    
             </div>
 
 
