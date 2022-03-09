@@ -100,8 +100,8 @@ header{
     position: relative;
     background-color: rgba(195, 188, 204, var(--var_alpha));
     padding: 10px;
-    width: 450px;
-    height: 250px;
+    width: 550px;
+    height: 350px;
     color:black;
     border: 1px solid rgba(42, 41, 44, var(--var_alpha));
     box-sizing: border-box;
@@ -110,8 +110,8 @@ header{
 
 #borderGenerator{
     background-color: rgba(245, 240, 252, var(--var_alpha));
-    min-width: 250px;
-    min-height: 180px;
+    min-width: 350px;
+    min-height: 280px;
     overflow: hidden;
     vertical-align: bottom;
 }
