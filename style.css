@@ -102,8 +102,6 @@ header{
     padding: 10px;
     width: 450px;
     height: 250px;
-    min-height: 250px;
-    min-width: 300px;
     color:black;
     border: 1px solid rgba(42, 41, 44, var(--var_alpha));
     box-sizing: border-box;
@@ -126,7 +124,6 @@ header{
     font-size: 10px;
     bottom:5px;
 }
-
 
 #ADS1{
 
