@@ -7,8 +7,9 @@
 
 /* Variáveis */
 :root{
-    --var_margin: 15px;
-
+    --var_margin: -5px;
+    --var_sideMargin:-30px;
+    --var_alpha:1;
 }
 
 input::-webkit-outer-spin-button,
@@ -21,13 +22,39 @@ input[type=number] {
     -moz-appearance: textfield;
   }
 
+  input[type="number"]{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border: 0px solid;
+    border-radius: 4px;
+    border-style: none;
+    text-align: center;
+    background-color: rgba(200, 200, 200, var(--var_alpha));
+    transition: all;
+    transition-duration: 1s;
+}
+
+input[type="number"]:focus{
+    outline:none;
+    background-color:rgba(255, 255, 255, 0.9);
+    width: 25px;
+    height: 25px;
+}
+
+input[type="radio"]{
+    margin-left: 1vh;
+    width: 10px;
+}
 
 
 body{
+    font-family: 'Lato', sans-serif;
     background-color: black;
     color: white;
     padding: 10px;
     margin: auto;
+    background-image: linear-gradient(to right, #706c78,#48444f );
 
 }
 
@@ -35,89 +62,102 @@ header{
     margin: auto;
     text-align: center;
     padding: 10px;
-}
-
-input{
-    width: 20px;
-    border-style: none;
-
+    margin-top: 25px;
 }
 
 /* IDS */
 
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%; 
+    z-index: -1; 
+}
+
 #main{
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
-    padding: 10px;
-    background-color: #c9c9ff;
+    margin-top: 25px;
+    padding: 25px;
     width: 100%;
-    height: 70vh;
+    height: 450px;
+    font-size:10px;
+    font-weight: 900;
+    box-sizing: border-box;
 }
-
 
 
 #containerSquare{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
-    background-color: gray;
+    background-color: rgba(195, 188, 204, var(--var_alpha));
     padding: 10px;
-    height: 350px;
-    width: 550px;
+    width: 450px;
+    height: 250px;
+    min-height: 250px;
+    min-width: 300px;
+    color:black;
+    border: 1px solid rgba(42, 41, 44, var(--var_alpha));
+    box-sizing: border-box;
+
+}
+
+#borderGenerator{
+    background-color: rgba(245, 240, 252, var(--var_alpha));
+    min-width: 250px;
+    min-height: 180px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+#lockBorders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 150px;
+    font-size: 10px;
+    bottom:5px;
+}
+
+
+#ADS1{
+
+    margin-bottom: 5px;
+    height: 20%;
 
 }
 
 #border1{
     position:absolute;
     top: var(--var_margin);
-    left: var(--var_margin);
+    left: var(--var_sideMargin);
 }
 
 #border2{
     position:absolute;
     top: var(--var_margin);
-    right: var(--var_margin);
+    right: var(--var_sideMargin);
 }
 
 #border3{
     position:absolute;
     bottom:var(--var_margin);
-    right:var(--var_margin);
+    right:var(--var_sideMargin);
 }
 
 #border4{
     position:absolute;
     bottom: var(--var_margin);
-    left: var(--var_margin);
+    left: var(--var_sideMargin);
 }
-
-#borderGenerator{
-    width: 70%;
-    height: 70%;
-    border: 5px solid black;
-}
-
-#lockBorders{
-    position: absolute;
-    font-size: 15px;
-    bottom:10px;
-}
-
-
-#ADS1{
-    background-color: rgb(44, 23, 138);
-    margin-top: 20px;
-    height: 150px;
-
-}
-
-
-
 
 
 /* Classes */
